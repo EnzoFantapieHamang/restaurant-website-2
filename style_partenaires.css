@@ -1,0 +1,74 @@
+/* Général */
+
+body{
+    margin: 0;
+}
+
+ul{
+    display: flex;
+    color: white;
+    list-style-type: none;
+}
+
+
+/* Navigation */
+nav{
+    display: flex;
+    background-color: rgb(43, 99, 219);
+    width: 100%;
+    height: 20vh;
+    justify-content: space-between;
+}
+
+nav img{
+    clip-path: circle();
+    margin-left: 20px;
+    width: 80px;
+    height: auto;
+    object-fit: contain;
+}
+
+nav ul{
+    margin-right: 20px;
+    align-items: center;
+}
+
+nav ul li{
+    padding: 15px;
+}
+
+/* section 1 et 2 */
+
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 5% 5%;
+}
+
+.record img{
+    clip-path: circle();
+}
+
+
+/* footer */
+
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(43, 99, 219) ;
+    color: white;
+}
+
+footer p{
+    padding: 15px;
+}
+
+
+@media all and (0px <= width <= 1000px){
+    nav, footer{
+        flex-direction: column;
+        align-items: center;
+    }
+}

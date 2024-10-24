@@ -1,0 +1,390 @@
+/* Général */
+
+body{
+    margin: 0;
+    font-family: 'Montserrat';
+}
+
+ul{
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+h2{
+    color: rgba(255, 196, 0, 0.815);
+}
+
+img{
+    max-width: 100%;
+}
+
+/* Page Accueil */
+
+/* Navigation */
+nav{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    width: 20%;
+    background-color: black;
+    position: fixed;
+}
+
+nav img{
+    margin-top: 30px;
+    width: 100px;
+    clip-path: circle();
+}
+
+nav li {
+    padding: 10px;
+    margin-top: 10px;
+    transition: 0.5s;
+}
+
+nav li:hover{
+    transform: scale(1.2);
+}
+
+/* Presentation */
+.presentation{
+    margin-left: 20%;
+    padding: 40px;
+    max-width: 80%;
+    height: 50vh;
+    background-color: black;
+    display: flex
+}
+
+.texte{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 40%;
+    max-height: 50vh;
+    color: white;
+    gap: 40px;
+}
+
+.texte .type{
+    display: flex;
+}
+
+.texte .type hr{
+    height: 20px;
+    margin-top: 29px;
+}
+
+.texte .type h3{
+    padding: 10px;
+}
+
+.texte .boutons{
+    margin: 20px 0px;
+    display: flex;
+}
+
+.boutons div{
+    padding: 10px;
+    margin: 10px;
+    border: solid 1px white;
+    border-radius: 20px;
+}
+
+.boutons div:hover{
+    border-color: rgba(255, 196, 0, 0.815);
+    color: rgba(255, 196, 0, 0.815);
+}
+
+
+
+
+
+
+.images {
+    background-color: black;
+    width: 80%; 
+    height: 35vh; 
+    margin: 20px auto;
+    overflow: hidden;
+    position: relative;
+}
+
+.images ul {
+    margin-left: 10px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 300%; /* Largeur totale pour trois images */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    /* Animation */
+    animation-name: AutoSlide;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in-out;
+}
+
+.images ul li {
+    list-style: none;
+    width: 30%;
+    display: inline;
+    margin: 0 10px; 
+}
+
+.images ul li img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: cover; 
+}
+
+/* Animation keyframes */
+@keyframes AutoSlide {
+    0% {
+        left: 0px; /* Première image */
+    }
+    15% {
+        left: 0px; /* Attente sur la première image */
+    }
+    35% {
+        left: -100%; /* Deuxième image */
+    }
+    50% {
+        left: -100%; /* Attente sur la deuxième image */
+    }
+    70% {
+        left: -200%; /* Troisième image */
+    }
+    85% {
+        left: -200%; /* Attente sur la troisième image */
+    }
+    100% {
+        left: 0px; /* Retour à la première image */
+    }
+}
+
+/* Histoire */
+
+.histoire{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    max-width: 80%;
+    margin-top: 60px;
+}
+
+.histoire img{
+    width: 30%;
+    margin-bottom: 60px;
+}
+
+.histoire p{
+    margin: 40px;
+}
+
+/* Partenaires */
+
+.actualites {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-left: 20%;
+    width: 80%;
+    height: auto; 
+}
+
+.actualites .flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center; 
+}
+
+.actualites .flex div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 200px;
+    height: auto; 
+    background-color: black;
+    margin: 20px;
+    color: white;
+    padding: 10px; 
+}
+
+.actualites .flex div img {
+    max-width: 100%;
+    height: auto; 
+}
+
+.actualites .flex div p {
+    padding: 5px;
+}
+
+/* footer */
+
+footer{
+    position: relative;
+    bottom: 0;
+    display: flex;
+    color: white;
+    margin-left: 20%;
+    width: 80%;
+    height: 20vh;
+    background-color: black;
+}
+
+footer div{
+    width: 33%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+footer div img.facebook{
+    width: 50px;
+    height: auto;
+    clip-path: circle();
+}
+
+footer div img.instagram{
+    width: 70px;
+    height: auto;
+    margin-left: 10px;
+}
+
+footer hr{
+    height: 30px;
+}
+
+.reseaux div{
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+/* CARTE */
+
+/* Première section */
+
+.carte_image{
+    background-image: url(img/pizza_2.png);
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    height: 300px;
+    color: white;
+}
+
+.carte_image h1{
+    margin-left: 20%;
+}
+
+/* Deuxième section */
+
+.plats{
+    margin-left: 20%;
+}
+
+.plats div{
+    display: flex;
+    margin: 40px;
+}
+
+.plats img{
+    width: 450px;
+    clip-path: circle();
+}
+
+.plats div div{
+    display: flex;
+    width: 50%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+
+.burger{
+    width: 50px;
+    height: auto;
+    clip-path: circle();
+}
+
+
+
+
+
+@media all and (1000px <= width){
+    .burger{
+        display: none;
+    }
+}
+
+
+@media all and (0px <= width <= 1000px){
+    nav{
+        display: none;
+    }
+
+    .plats div{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .plats div.reverse{
+        flex-direction: column-reverse;
+    }
+
+    footer, .presentation{
+        flex-direction: column;
+        align-items: center;
+        height: 70vh;
+    }
+
+    footer div{
+        margin: 30px;
+    }
+
+    .carte_image h1, footer{
+        margin-left: 0;
+    }
+
+    .plats, .presentation, .histoire, .actualites{
+        margin-left: 0;
+    }
+
+    footer, .actualites{
+        width: 100%;
+    }
+
+    .presentation, .histoire{
+        max-width: 100%;
+    }
+}
+
